@@ -61,15 +61,26 @@
     </style>
 </head>
 <body>
+
 <div id="container">
     <h1>Will You Be My Valentine?</h1>
-    <p>Dear [Nada],</p>
+    <p>Dear Nada,</p>
     <p>Roses are red, violets are blue, my heart is full, and it's all for you!</p>
     <img src="nada2.jpeg" alt="Cute Valentine's Day Image" id="valentine-img">
     <p>Would you make my day extra special by being my Valentine?</p>
-    <button onclick="alert('Yes, I'd love to be your Valentine!')">Yes, I'd love to!</button>
+    <button onclick="displayMessage()">Yes, I'd love to!</button>
 </div>
-<audio controls autoplay>    
-    <source src=".\love.mp3" type="audio/mpeg">
+
+<script>
+    function displayMessage() {
+        document.getElementById("container").innerHTML = `
+            <h1>Yay! 🌟</h1>
+            <p>Dear Nada,</p>
+            <p>Your sweet 'Yes' has made my day brighter! I'm looking forward to celebrating Valentine's Day with you. 😊</p>
+            <img src="bouquet.jpeg" alt="Happy Image" id="valentine-img">
+        `;
+    }
+</script>
+
 </body>
 </html>
