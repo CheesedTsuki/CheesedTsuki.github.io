@@ -63,6 +63,10 @@
             transition: background-color 0.3s ease;
         }
 
+        button.no-button {
+            font-size: 16px; /* Initial font size */
+        }
+
         button:hover {
             background-color: #c2185b; /* Darker pink on hover */
         }
@@ -78,7 +82,7 @@
     <p>Would you make my day extra special by being my Valentine?</p>
     <div class="button-container">
         <button onclick="displayMessage()">Yes, I'd love to!</button>
-        <button onclick="shrinkButton()">No, sorry.</button>
+        <button onclick="shrinkButton()" class="no-button">No, sorry.</button>
     </div>
 </div>
 
@@ -96,9 +100,7 @@
 
     function shrinkButton() {
         buttonSize--; // Decrease button font size
-        document.querySelectorAll("button").forEach(button => {
-            button.style.fontSize = `${buttonSize}px`; // Apply new font size
-        });
+        document.querySelector("button.no-button").style.fontSize = `${buttonSize}px`; // Apply new font size only to the "No" button
     }
 </script>
 
