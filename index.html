@@ -12,7 +12,7 @@
             justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f5f5f5;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
             font-family: Arial, sans-serif;
             text-align: center;
         }
@@ -24,11 +24,16 @@
             background-color: #e91e63;
             color: #fff;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 40px; /* Increased font size for emojis */
             border: none;
             border-radius: 5px;
             cursor: pointer;
             margin: 10px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         button:hover {
             background-color: #d81b60;
@@ -46,10 +51,10 @@
 <body>
     <h1>Dear Nada,</h1>
     <div id="letters">
-        <button onclick="showMessage('You are amazing and i love you baby ! 🌟')">Letter 1</button>
-        <button onclick="showMessage('Your smile makes everyday better ! 😊')">Letter 2</button>
-        <button onclick="showMessage('I appreciate everything you do for me! 💖')">Letter 3</button>
-        <button onclick="showMessage('You are my everything princess! 🌞')">Letter 4</button>
+        <button onclick="showMessage('You are amazing! 🌟')">💌</button>
+        <button onclick="showMessage('Your smile brightens my day! 😊')">📨</button>
+        <button onclick="showMessage('I appreciate everything you do! 💖')">✉️</button>
+        <button onclick="showMessage('You are my sunshine on a rainy day! 🌞')">📧</button>
     </div>
     <div id="message" class="message" style="display: none;"></div>
 
